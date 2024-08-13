@@ -1,0 +1,76 @@
+.rules-text{
+    margin-top: 50px;
+    max-width: 862px;
+    color: #555;
+}
+
+.rules-text h3{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    color: inherit;
+    margin-bottom: 32px;
+    font-family: 'HelveticaNeue', sans-serif;
+}
+
+.rules-text p,
+.rules-text li{
+    font-size: 20px;
+    line-height: 140%;
+    margin-bottom: 24px;
+}
+
+.rules-text p:last-child,
+.rules-text li:last-child{
+    margin-bottom: 0;
+}
+
+.rules-text ul li{
+    position: relative;
+    padding-left: 26px;
+}
+
+.rules-text ul li:before{
+    content: '';
+    position: absolute;
+    background-image: url(../img/list-marker.svg);
+    width: 13px;
+    height: 3px;
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 13px;
+    left: 0;
+}
+
+.rules-text hr{
+    display: block;
+    margin: 0 0 40px;
+    opacity: 0;
+}
+
+
+@media (max-width: 768px){
+    .rules-text{
+        margin-top: 30px;
+    }
+
+    .rules-text h3{
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .rules-text p,
+    .rules-text li{
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .rules-text p{
+        margin-bottom: 30px;
+    }
+
+    .rules-text ul li{
+        padding-left: 24px;
+    }
+}

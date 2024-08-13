@@ -1,0 +1,266 @@
+.product-page__cnt{
+   margin-top: 30px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 30px;
+}
+.product-page__info{
+    max-width: 750px;
+    width: 100%;
+}
+.product-page-version{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+.product-page-version small{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.09px;
+    text-align: left;
+    color: #081B4D;
+}
+.icon-diamond{
+    content: url("../img/icons/diamond.svg");
+}
+.product-page__info p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #555555;
+    margin-top: 37px;
+}
+.product-version-tab{
+    margin-top: 70px;
+    width: 100%;
+}
+.product-version-name{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px 27px;
+}
+.product-version-name:nth-child(odd){
+    background: #F6F7F6;
+    border-radius: 10px;
+}
+.product-version-name p{
+    max-width: 215px;
+    width: 100%;
+    color: #777777;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+    margin: 0;
+}
+.product-version-name span{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.09px;
+    text-align: left;
+    color: #081B4D;
+}
+
+.product-version-photo{
+    max-width: 420px;
+    width: 100%;
+    display: flex;
+    min-height: 532px;
+    position: relative;
+}
+.product-version-photo img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.single-chamber-sec{
+    margin-top: 75px;
+}
+
+.single-chamber-flex{
+    display: flex;
+    margin-bottom: 30px;
+    gap: 90px;
+}
+
+.single-chamber-box p{
+    color: #555555;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+}
+
+.radialProgressBar {
+    border-radius: 50%;
+    width: 138px;
+    height: 138px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /*background: #ddd;*/
+    margin-top: 26px;
+    position: relative;
+}
+.radialProgressBar .overlay {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    /*background: #fff;*/
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    color: #1B41A3;
+}
+
+.radialProgressBar svg{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.radialProgressBar path{
+    transition: all .7s;
+    transition-delay: .2s;
+}
+
+.radialProgressBar:not(.in-view){
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+}
+
+.radialProgressBar:not(.in-view) .progress__fill{
+    stroke-dashoffset: -411 !important;
+}
+
+/*.progress-10 {*/
+/*    background-image: linear-gradient(92deg, #F6F7F6 50%, transparent 50%), linear-gradient(269deg, #1B41A3 50%, #F6F7F6 50%);*/
+/*}*/
+/*.progress-20 {*/
+/*    background-image: linear-gradient(-49deg, #1B41A3 50%, transparent 50%), linear-gradient(-89deg, #1B41A3 50%, #F6F7F6 50%);*/
+/*}*/
+
+/*.progress-5 {*/
+/*    background-image: linear-gradient(90deg, #F6F7F6 50%, transparent 50%), linear-gradient(148deg, #1B41A3 50%, #F6F7F6 50%);*/
+/*}*/
+
+
+.energy-efficiency{
+    margin-top: 20px;
+}
+.energy-efficiency span{
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 31.02px;
+    text-align: left;
+    display: block;
+    color: #081B4D;
+    margin-top: 5px;
+}
+.energy-effic-fl{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+.energy-circk-bg{
+    border-radius: 50%;
+    display: block;
+    background: #274DAD;
+    width: 30px;
+    height: 30px;
+}
+.low-reflectivity span{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+    color: #555555;
+}
+.low-reflectivity p{
+    color: #999999;
+}
+.double-glazed-text p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+    color: #999999;
+}
+
+
+@media (max-width: 1199px){
+    .product-version-photo{
+        display: none;
+    }
+    .single-chamber-flex {
+        gap: 70px;
+    }
+}
+@media (max-width: 1020px){
+    .single-chamber-sec {
+        margin-top: 55px;
+    }
+    .single-chamber-flex {
+        gap: 50px 60px;
+        flex-wrap: wrap;
+    }
+    .product-page__info>p {
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 30px;
+    }
+}
+@media (max-width: 760px){
+    .product-version-tab {
+        margin-top: 50px;
+        overflow-x: scroll;
+        padding-bottom: 5px;
+    }
+    .product-version-wid{
+        width: 750px;
+    }
+    .single-chamber-flex {
+        gap: 50px 50px;
+        flex-wrap: wrap;
+    }
+    .energy-efficiency span {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .energy-effic-fl {
+        margin-top: 22px;
+        gap: 11px;
+    }
+    .energy-circk-bg {
+        width: 100%;
+        height: 25px;
+        max-width: 25px;
+    }
+}
+@media (max-width: 420px){
+    .single-chamber-flex {
+        gap: 50px 30px;
+    }
+    .single-chamber-box:last-child{
+        max-width: 173px;
+        width: 100%;
+    }
+}

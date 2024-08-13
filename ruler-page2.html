@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header__main">
+                <a href="#" class="header-logo">
+
+
+                    <img src="./assets/img/logo.svg" alt="logo">
+
+                </a>
+                <div class="header__search">
+                    <button type="button" class="header__search-close">
+                        <img src="assets/img/close2.svg" alt="">
+                    </button>
+                    <label>
+                        <input type="text" placeholder="Поиск по каталогу">
+                    </label>
+                    <button class="search-btn"><i class="icon-search-white"></i></button>
+                </div>
+                <div class="header__menu">
+                    <div class="header__fl">
+                        <ul>
+                            <li><a href="#">Видео</a></li>
+                            <li><a href="#">Команда</a></li>
+                            <li><a href="#">Карьера</a></li>
+                        </ul>
+                        <div class="open-search">
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 15.5C12.1421 15.5 15.5 12.1421 15.5 8C15.5 3.85786 12.1421 0.5 8 0.5C3.85786 0.5 0.5 3.85786 0.5 8C0.5 12.1421 3.85786 15.5 8 15.5Z" stroke="#081B4D" />
+                                <path d="M13.2578 14.257L18.9147 19.9138" stroke="#081B4D" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="open-menu">
+                            <small>Меню</small>
+                            <div class="open-menu-line">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-href-pages">
+                        <ul>
+                            <li><a href="#">ПРОДУКЦИЯ</a></li>
+                            <li><a href="#">БЛОГ</a></li>
+                            <li><a href="#">О КОМПАНИИ</a></li>
+                            <li><a href="#">КОНТАКТЫ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-fixed">
+            <div class="container">
+                <div class="menu-fixed__fl">
+                    <div class="menu-href">
+                        <h3>ИНФОРМАЦИЯ</h3>
+                        <ul>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Карьера</a></li>
+                            <li><a href="#">Проекты</a></li>
+                            <li><a href="#">Готовые решения</a></li>
+                            <li><a href="#">Команда</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-href">
+                        <h3>ДЛЯ КЛИЕНТОВ</h3>
+                        <ul>
+                            <li><a href="#">Архитекторам и проектировщикам</a></li>
+                            <li><a href="#">Дизайнерам</a></li>
+                            <li><a href="#">Производственным компаниям</a></li>
+                            <li><a href="#">Оконным компаниям</a></li>
+                            <li><a href="#">Частным компаниям</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-href">
+                        <h3>КАТАЛОГ</h3>
+                        <ul>
+                            <li><a href="#">Все линейки</a></li>
+                            <li><a href="#">Интерьерные</a></li>
+                            <li><a href="#">Архитектурные</a></li>
+                            <li><a href="#">Оконные</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-href">
+                        <h3>СЕРВИСЫ</h3>
+                        <ul>
+                            <li><a href="#">Материалы</a></li>
+                            <li><a href="#">Консультации</a></li>
+                            <li><a href="#">Glass Bus</a></li>
+                            <li><a href="#">Технические расчеты</a></li>
+                            <li><a href="#">Сервис-каталог</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-href">
+                        <h3>ДОМА/КОТТЕДЖИ</h3>
+                        <div class="houses-cottages">
+                            <img src="./assets/img/modernist.jpg" alt="image">
+                        </div>
+                        <a href="#">Готовые решения для
+                            коттеджей и частных домов </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="ruler-page-sec anim-style">
+        <div class="container">
+            <div class="bread-caps">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Каталог продукции</a></li>
+                    <li><a>Линейка VISION</a></li>
+                </ul>
+            </div>
+            <div class="ruler-vision__flex">
+                <div class="ruler-vision__info">
+                    <h1>VISION</h1>
+                    <span>АРХИТЕКТУКРНЫЕ</span>
+                    <div class="catalog__menu">
+                        <ul>
+                            <li class="catalog-tab-click catalog-menu-href" data-catalog="for-all">Для всех</li>
+                            <li class="catalog-tab-click" data-catalog="architects">Архитекторам и проектировщикам</li>
+                            <li class="catalog-tab-click" data-catalog="designers">Дизайнерам</li>
+                            <li class="catalog-tab-click" data-catalog="companies">Оконным компаниям</li>
+                            <li class="catalog-tab-click" data-catalog="production">Производственным компаниям</li>
+                            <li class="catalog-tab-click" data-catalog="private">Частным клиентам</li>
+                        </ul>
+                    </div>
+                    <div class="catalog-min">
+                        <div class="catalog-min-js" data-catalog="for-all">
+                            <h3>Высокоселективное мультифункциональное стекло с двойным серебряным покрытием.</h3>
+                            <p>
+                                Линейка Vision является передовой в архитектурном направлении и делится
+                                на флагманскую и стандартную линейки. Продукты флагманской линейки
+                                (36T, 50/50T, 60/60T, 71/71T) обладают наивысшими показателями
+                                селективности, нейтральности, энергосбережения и солнцезащиты. Продукты
+                                стандартной линейки (Light, Ice) обладают высокими показателями по
+                                солнцезащите и энергосбережению, более высокой рефлективностью по
+                                сравнению с флагманской линейкой.
+                            </p>
+                        </div>
+                        <div class="catalog-min-js" data-catalog="architects">
+                            <h3>2 Высокоселективное мультифункциональное стекло с двойным серебряным покрытием.</h3>
+                            <p>
+                                Линейка Vision является передовой в архитектурном направлении и делится
+                                на флагманскую и стандартную линейки. Продукты флагманской линейки
+                                (36T, 50/50T, 60/60T, 71/71T) обладают наивысшими показателями
+                                селективности, нейтральности
+                            </p>
+                        </div>
+                        <div class="catalog-min-js" data-catalog="designers">
+                            <h3>3 Высокоселективное мультифункциональное стекло.</h3>
+                            <p>
+                                Линейка Vision является передовой в архитектурном направлении и делится
+                                на флагманскую и стандартную линейки. Продукты флагманской линейки
+                                (36T, 50/50T, 60/60T, 71/71T) обладают наивысшими показателями
+                                селективности, нейтральности
+                            </p>
+                        </div>
+                        <div class="catalog-min-js" data-catalog="companies">
+                            <h3>4 Высокоселективное мультифункциональное стекло.</h3>
+                            <p>
+                                Линейка Vision является передовой в архитектурном направлении и делится
+                                на флагманскую и стандартную линейки. Продукты флагманской линейки
+                                (36T, 50/50T, 60/60T, 71/71T) обладают наивысшими показателями
+                                селективности, нейтральности
+                            </p>
+                        </div>
+                        <div class="catalog-min-js" data-catalog="production">
+                            <h3>5 Высокоселективное мультифункциональное стекло.</h3>
+                            <p>
+                                Линейка Vision является передовой в архитектурном направлении и делится
+                                на флагманскую и стандартную линейки. Продукты флагманской линейки
+                                (36T, 50/50T, 60/60T, 71/71T) обладают наивысшими показателями
+                                селективности, нейтральности
+                            </p>
+                        </div>
+                        <div class="catalog-min-js" data-catalog="private">
+                            <h3>6 Высокоселективное мультифункциональное стекло.</h3>
+                            <p>
+                                Линейка Vision является передовой в архитектурном направлении и делится
+                                на флагманскую и стандартную линейки. Продукты флагманской линейки
+                                (36T, 50/50T, 60/60T, 71/71T) обладают наивысшими показателями
+                                селективности, нейтральности
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ruler-vision__photo">
+                    <img src="./assets/img/catalog4.jpg" alt="image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-line-sec anim-newSing">
+        <div class="container">
+            <h3>ПРОДУКТЫ ЛИНЕЙКИ</h3>
+            <div class="catalog__menu">
+                <ul>
+                    <li class="catalog-menu-href"><a href="">Основная линейка</a></li>
+                    <li><a href="">На базе CrystalVision</a></li>
+                </ul>
+            </div>
+            <div class="products-line-wrap anim-newSing">
+                <div class="catalog__box">
+                    <a href="#" class="catalog__photo">
+                        <img src="./assets/img/catalog1.jpg" alt="image">
+                    </a>
+                    <a href="#" class="catalog-cart-name">VISION</a>
+                </div>
+                <div class="catalog__box">
+                    <a href="#" class="catalog__photo">
+                        <img src="./assets/img/catalog2.jpg" alt="image">
+                    </a>
+                    <a href="#" class="catalog-cart-name">PHOENIX</a>
+                </div>
+                <div class="catalog__box">
+                    <a href="#" class="catalog__photo">
+                        <img src="./assets/img/catalog3.jpg" alt="image">
+                    </a>
+                    <a href="#" class="catalog-cart-name">TOP L/ TOP LT</a>
+                </div>
+                <div class="catalog__box">
+                    <a href="#" class="catalog__photo">
+                        <img src="./assets/img/catalog4.jpg" alt="image">
+                    </a>
+                    <a href="#" class="catalog-cart-name">CRYSTALVISION</a>
+                </div>
+                <div class="catalog__box">
+                    <a href="#" class="catalog__photo">
+                        <img src="./assets/img/catalog5.jpg" alt="image">
+                    </a>
+                    <a href="#" class="catalog-cart-name">STRATOSAFE</a>
+                </div>
+                <div class="catalog__box">
+                    <a href="#" class="catalog__photo">
+                        <img src="./assets/img/catalog6.jpg" alt="image">
+                    </a>
+                    <a href="#" class="catalog-cart-name">STRATOSAFE ACOUSTIS </a>
+                </div>
+
+                <div class="catalog__box">
+                    <a href="#" class="catalog__photo">
+                        <img src="./assets/img/catalog5.jpg" alt="image">
+                    </a>
+                    <a href="#" class="catalog-cart-name">STRATOSAFE</a>
+                </div>
+                <div class="catalog__box">
+                    <a href="#" class="catalog__photo">
+                        <img src="./assets/img/catalog6.jpg" alt="image">
+                    </a>
+                    <a href="#" class="catalog-cart-name">STRATOSAFE ACOUSTIS </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="application-sec anim-newSing">
+        <div class="container">
+            <h3>СФЕРЫ ПРИМЕНЕНИЯ</h3>
+            <div class="application__flex">
+                <div class="application__box">
+                    <div class="application__icon">
+                        <img src="./assets/img/icons/spread.svg" alt="icon">
+                    </div>
+                    <p>
+                        Фасадное остекление -
+                        ключевое направление линейки Vision
+                    </p>
+                </div>
+                <div class="application__box">
+                    <div class="application__icon">
+                        <img src="./assets/img/icons/layer.svg" alt="icon">
+                    </div>
+                    <p>
+                        Широкоформатное остекление
+                        для домов и коттеджей с Vision Light
+                        и Vision Ice
+                    </p>
+                </div>
+                <div class="application__box">
+                    <div class="application__icon">
+                        <img src="./assets/img/icons/spread-two.svg" alt="icon">
+                    </div>
+                    <p>
+                        Решения для домов и коттеджей
+                        премиального класса с
+                        флагманскими продуктами Vision
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="this-glass-sec anim-newSing">
+        <div class="container">
+            <h3>ПРОЕКТЫ <br> С ЭТИМ СТЕКЛОМ</h3>
+            <div class="this-glass__cnt">
+                <div class="swiper this-glass-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div data-modal-id="galleryModal" data-id="0" class="this-glass-photo" style="background-image: url('./assets/img/shutterstock1.jpg')">
+                                <h4>Стеклянная кора и Большой амфитеатр,
+                                    парк Зарядье</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div data-modal-id="galleryModal" data-id="1" class="this-glass-photo" style="background-image: url('./assets/img/shutterstock2.jpg')">
+                                <h4>Инженерный центр «Мосгаз», Москва</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div data-modal-id="galleryModal" data-id="2" class="this-glass-photo" style="background-image: url('./assets/img/shutterstock2.jpg')">
+                                <h4>Инженерный центр «Мосгаз», Москва</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="this-glass-prev swiper-button-prev">
+                    <img src="./assets/img/icons/arrow-white.svg" alt="icon">
+                </div>
+                <div class="this-glass-next swiper-button-next">
+                    <img src="./assets/img/icons/arrow-white.svg" alt="icon">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="gallery-popup" id="galleryModal">
+        <div class="gallery-popup__bg _close-gallery-popup"></div>
+        <div class="gallery-popup__dialog">
+            <button class="gallery-popup__close _close-gallery-popup">
+                <img src="assets/img/close.svg" alt="">
+            </button>
+            <div class="gallery-slider slider">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="gallery-slider__img">
+                                <img src="./assets/img/shutterstock1.jpg" alt="">
+                            </div>
+                            <div class="gallery-popup__content">
+                                <div class="gallery-popup__title">
+                                    Стеклянная кора и Большой амфитеатр,
+                                    парк Зарядье
+                                </div>
+                                <a href="" class="gallery-popup__link">
+                                    Смотреть проект
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery-slider__img">
+                                <img src="./assets/img/shutterstock2.jpg" alt="">
+                            </div>
+                            <div class="gallery-popup__content">
+                                <div class="gallery-popup__title">
+                                    Инженерный центр «Мосгаз», Москва
+                                </div>
+                                <a href="" class="gallery-popup__link">
+                                    Смотреть проект
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery-slider__img">
+                                <img src="./assets/img/shutterstock2.jpg" alt="">
+                            </div>
+                            <div class="gallery-popup__content">
+                                <div class="gallery-popup__title">
+                                    Инженерный центр «Мосгаз», Москва
+                                </div>
+                                <a href="" class="gallery-popup__link">
+                                    Смотреть проект
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev">
+                    <img src="./assets/img/icons/arrow-white.svg" alt="icon">
+                </div>
+                <div class="swiper-button-next">
+                    <img src="./assets/img/icons/arrow-white.svg" alt="icon">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="comparison-sec anim-newSing">
+        <div class="container">
+            <h3>СРАВНЕНИЕ ПРОДУКТОВ ЛИНЕЙКИ</h3>
+            <div class="comparison__table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Модель</th>
+                            <th>Селективность</th>
+                            <th>Нейтральность</th>
+                            <th>Энергосбережение</th>
+                            <th>Солнцезащита</th>
+                            <th>Энергосбережение</th>
+                            <th>Цветопередача</th>
+                            <th>Цвет</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Vision 36T</td>
+                            <td>Высокоселективное</td>
+                            <td>57%</td>
+                            <td>Нет</td>
+                            <td>43%</td>
+                            <td>Нет</td>
+                            <td>43%</td>
+                            <td><span class="table-col-blue"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Vision 50T</td>
+                            <td>Высокоселективное</td>
+                            <td>68%</td>
+                            <td>Да</td>
+                            <td>19%</td>
+                            <td>Да</td>
+                            <td>19%</td>
+                            <td><span class="table-col-silver"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Vision 60T</td>
+                            <td>Обычное</td>
+                            <td>23%</td>
+                            <td>Да</td>
+                            <td>13%</td>
+                            <td>Да</td>
+                            <td>13%</td>
+                            <td><span class="table-col-grey"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Vision 71T</td>
+                            <td>Высокоселективное</td>
+                            <td>85%</td>
+                            <td>Да</td>
+                            <td>21%</td>
+                            <td>Нет</td>
+                            <td>21%</td>
+                            <td><span class="table-col-silver"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Vision Light</td>
+                            <td>Обычное</td>
+                            <td>90%</td>
+                            <td>Да</td>
+                            <td>15%</td>
+                            <td>Да</td>
+                            <td>15%</td>
+                            <td><span class="table-col-grey"></span></td>
+                        </tr>
+
+                        <tr class="tab-exd-none">
+                            <td>Vision Light</td>
+                            <td>Обычное</td>
+                            <td>90%</td>
+                            <td>Да</td>
+                            <td>15%</td>
+                            <td>Да</td>
+                            <td>15%</td>
+                            <td><span class="table-col-grey"></span></td>
+                        </tr>
+                        <tr class="tab-exd-none">
+                            <td>Vision Light</td>
+                            <td>Обычное</td>
+                            <td>90%</td>
+                            <td>Да</td>
+                            <td>15%</td>
+                            <td>Да</td>
+                            <td>15%</td>
+                            <td><span class="table-col-grey"></span></td>
+                        </tr>
+                        <tr class="tab-exd-none">
+                            <td>Vision Light</td>
+                            <td>Обычное</td>
+                            <td>90%</td>
+                            <td>Да</td>
+                            <td>15%</td>
+                            <td>Да</td>
+                            <td>15%</td>
+                            <td><span class="table-col-grey"></span></td>
+                        </tr>
+                        <tr class="tab-exd-none">
+                            <td>Vision Light</td>
+                            <td>Обычное</td>
+                            <td>90%</td>
+                            <td>Да</td>
+                            <td>15%</td>
+                            <td>Да</td>
+                            <td>15%</td>
+                            <td><span class="table-col-grey"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expand-table__flex">
+                <span class="expand-table expand-table-remove">
+                <span class="expand-table-name">Развернуть таблицу</span>
+                <span class="collapse-table-name">Свернуть таблицу</span>
+                </span>
+                <a href="#" download="" class="download-document">Скачать документ <span>(pdf)</span></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="thickness-sec anim-newSing">
+        <div class="container">
+            <h3>ВОЗМОЖНАЯ ТОЛЩИНА ПРОДУКТОВ В ЛИНЕЙКЕ</h3>
+            <div class="thickness__table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Продукты VISION</th>
+                            <th>36Т</th>
+                            <th>50</th>
+                            <th>50Т</th>
+                            <th>60</th>
+                            <th>60Т</th>
+                            <th>Blue 50T</th>
+                            <th>Light</th>
+                            <th>Ice</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>4 мм</td>
+                            <td>+</td>
+                            <td>+</td>
+                            <td></td>
+                            <td>+</td>
+                            <td>+</td>
+                            <td></td>
+                            <td></td>
+                            <td>+</td>
+                        </tr>
+                        <tr>
+                            <td>6 мм</td>
+                            <td>+</td>
+                            <td></td>
+                            <td>+</td>
+                            <td></td>
+                            <td>+</td>
+                            <td></td>
+                            <td>+</td>
+                            <td>+</td>
+                        </tr>
+                        <tr>
+                            <td>8 мм</td>
+                            <td></td>
+                            <td>+</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>+</td>
+                            <td>+</td>
+                        </tr>
+                        <tr>
+                            <td>10 мм</td>
+                            <td>+</td>
+                            <td>+</td>
+                            <td></td>
+                            <td>+</td>
+                            <td>+</td>
+                            <td>+</td>
+                            <td></td>
+                            <td>+</td>
+                        </tr>
+
+                        <tr class="expand-table-none">
+                            <td>10 мм</td>
+                            <td>+</td>
+                            <td>+</td>
+                            <td></td>
+                            <td>+</td>
+                            <td>+</td>
+                            <td>+</td>
+                            <td></td>
+                            <td>+</td>
+                        </tr>
+                        <tr class="expand-table-none">
+                            <td>10 мм</td>
+                            <td>+</td>
+                            <td>+</td>
+                            <td></td>
+                            <td>+</td>
+                            <td>+</td>
+                            <td>+</td>
+                            <td></td>
+                            <td>+</td>
+                        </tr>
+                        <tr class="expand-table-none">
+                            <td>10 мм</td>
+                            <td>+</td>
+                            <td>+</td>
+                            <td></td>
+                            <td>+</td>
+                            <td>+</td>
+                            <td>+</td>
+                            <td></td>
+                            <td>+</td>
+                        </tr>
+                        <tr class="expand-table-none">
+                            <td>10 мм</td>
+                            <td>+</td>
+                            <td>+</td>
+                            <td></td>
+                            <td>+</td>
+                            <td>+</td>
+                            <td>+</td>
+                            <td></td>
+                            <td>+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expand-table__flex">
+                <span class="expand-table thickness-expand">
+                <span class="expand-table-name">Развернуть таблицу</span>
+                <span class="collapse-table-name">Свернуть таблицу</span>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <section class="may-interested ">
+        <div class="container">
+            <div class="may-interested__tit anim-newSing">
+                <h3>МОЖЕТ ЗАИНТЕРЕСОВАТЬ</h3>
+                <a href="#" class="href-see-all">
+                    <span>Перейти в каталог</span>
+                    <i class="icon-arrow"></i>
+                </a>
+            </div>
+            <div class="interested-rel anim-newSing">
+                <div class="swiper interested-slider interested-slider--projects">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="catalog__box">
+                                <a href="#" class="catalog__photo">
+                                    <span class="actual-cart">АРХИТЕКТУКРНЫЕ</span>
+                                    <img src="./assets/img/catalog1.jpg" alt="image">
+                                </a>
+                                <a href="#" class="catalog-cart-name">VISION</a>
+                                <p>
+                                    Высокоселективное
+                                    мультифункциональное стекло с двойным
+                                    серебряным покрытием.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="catalog__box">
+                                <a href="#" class="catalog__photo">
+                                    <span class="actual-cart">ДЕКОРАТИВНЫЕ</span>
+                                    <img src="./assets/img/catalog2.jpg" alt="image">
+                                </a>
+                                <a href="#" class="catalog-cart-name">PHOENIX</a>
+                                <p>
+                                    Солнцезащитное стекло с зеркальным
+                                    магнетронным покрытием
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="catalog__box">
+                                <a href="#" class="catalog__photo">
+                                    <span class="actual-cart">ОКОННЫЕ</span>
+                                    <img src="./assets/img/catalog3.jpg" alt="image">
+                                </a>
+                                <a href="#" class="catalog-cart-name">TOP L/ TOP LT</a>
+                                <p>
+                                    Мультифункциональное закаливаемое
+                                    стекло с наилучшим уровнем
+                                    светопропускания
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="catalog__box">
+                                <a href="#" class="catalog__photo">
+                                    <span class="actual-cart">АРХИТЕКТУКРНЫЕ</span>
+                                    <img src="./assets/img/catalog4.jpg" alt="image">
+                                </a>
+                                <a href="#" class="catalog-cart-name">CRYSTALVISION</a>
+                                <p>
+                                    Максимальная нейтральность и
+                                    светопередача
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="catalog__box">
+                                <a href="#" class="catalog__photo">
+                                    <span class="actual-cart">ДЕКОРАТИВНЫЕ</span>
+                                    <img src="./assets/img/catalog5.jpg" alt="image">
+                                </a>
+                                <a href="#" class="catalog-cart-name">STRATOSAFE</a>
+                                <p>
+                                    Стойкая гарантия защиты от
+                                    повреждений любого уровня
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="interested-button-prev swiper-button-prev">
+                    <img src="./assets/img/icons/arrow-white.svg" alt="icon">
+                </div>
+                <div class="interested-button-next swiper-button-next">
+                    <img src="./assets/img/icons/arrow-white.svg" alt="icon">
+                </div>
+                <div class="interested-pagination swiper-pagination"></div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer__main ">
+                <a href="#" class="footer__logo anim-newSing"><img src="./assets/img/logo.svg" alt="logo"></a>
+                <div class="footer__menu">
+                    <ul class="anim-newSing">
+                        <li><a href="#">Продукция</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Проекты</a></li>
+                        <li><a href="#">Готовые решения</a></li>
+                        <li><a href="#">Дома/Коттеджи</a></li>
+                        <li><a href="#">Команда</a></li>
+                        <li><a href="#">Блог</a></li>
+                    </ul>
+                    <ul class="anim-newSing">
+                        <li><a href="#">Партнеры</a></li>
+                        <li><a href="#">Карьера</a></li>
+                        <li><a href="#">Видео</a></li>
+                        <li><a href="#">Материалы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <ul class="anim-newSing">
+                        <li><a href="#">Архитекторам и проектировщикам</a></li>
+                        <li><a href="#">Дизайнерам</a></li>
+                        <li><a href="#">Производственным компаниям</a></li>
+                        <li><a href="#">Оконным компаниям</a></li>
+                        <li><a href="#">Частным компаниям</a></li>
+                    </ul>
+                    <ul class="anim-newSing">
+                        <li><a href="#">Материалы</a></li>
+                        <li><a href="#">Консультации</a></li>
+                        <li><a href="#">Glass Bus</a></li>
+                        <li><a href="#">Технические расчеты</a></li>
+                        <li><a href="#">Сервис-каталог</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__down anim-newSing">
+                <p>© AIG Glass Russia 2024</p>
+                <a href="#">Разработка сайта LOGIC</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.mask.js"></script>
+    <script src="assets/js/jquery.formstyler.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/fancybox.umd.js"></script>
+    <script src="assets/js/script.js"></script>
+
+
+</body>
+
+</html>

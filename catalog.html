@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header__main">
+                <a href="#" class="header-logo">
+
+
+                    <img src="./assets/img/logo.svg" alt="logo">
+
+                </a>
+                <div class="header__search">
+                    <button type="button" class="header__search-close">
+                        <img src="assets/img/close2.svg" alt="">
+                    </button>
+                    <label>
+                        <input type="text" placeholder="Поиск по каталогу">
+                    </label>
+                    <button class="search-btn"><i class="icon-search-white"></i></button>
+                </div>
+                <div class="header__menu">
+                    <div class="header__fl">
+                        <ul>
+                            <li><a href="#">Видео</a></li>
+                            <li><a href="#">Команда</a></li>
+                            <li><a href="#">Карьера</a></li>
+                        </ul>
+                        <div class="open-search">
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 15.5C12.1421 15.5 15.5 12.1421 15.5 8C15.5 3.85786 12.1421 0.5 8 0.5C3.85786 0.5 0.5 3.85786 0.5 8C0.5 12.1421 3.85786 15.5 8 15.5Z" stroke="#081B4D" />
+                                <path d="M13.2578 14.257L18.9147 19.9138" stroke="#081B4D" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="open-menu">
+                            <small>Меню</small>
+                            <div class="open-menu-line">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-href-pages">
+                        <ul>
+                            <li><a href="#">ПРОДУКЦИЯ</a></li>
+                            <li><a href="#">БЛОГ</a></li>
+                            <li><a href="#">О КОМПАНИИ</a></li>
+                            <li><a href="#">КОНТАКТЫ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-fixed">
+            <div class="container">
+                <div class="menu-fixed__fl">
+                    <div class="menu-href">
+                        <h3>ИНФОРМАЦИЯ</h3>
+                        <ul>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Карьера</a></li>
+                            <li><a href="#">Проекты</a></li>
+                            <li><a href="#">Готовые решения</a></li>
+                            <li><a href="#">Команда</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-href">
+                        <h3>ДЛЯ КЛИЕНТОВ</h3>
+                        <ul>
+                            <li><a href="#">Архитекторам и проектировщикам</a></li>
+                            <li><a href="#">Дизайнерам</a></li>
+                            <li><a href="#">Производственным компаниям</a></li>
+                            <li><a href="#">Оконным компаниям</a></li>
+                            <li><a href="#">Частным компаниям</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-href">
+                        <h3>КАТАЛОГ</h3>
+                        <ul>
+                            <li><a href="#">Все линейки</a></li>
+                            <li><a href="#">Интерьерные</a></li>
+                            <li><a href="#">Архитектурные</a></li>
+                            <li><a href="#">Оконные</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-href">
+                        <h3>СЕРВИСЫ</h3>
+                        <ul>
+                            <li><a href="#">Материалы</a></li>
+                            <li><a href="#">Консультации</a></li>
+                            <li><a href="#">Glass Bus</a></li>
+                            <li><a href="#">Технические расчеты</a></li>
+                            <li><a href="#">Сервис-каталог</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-href">
+                        <h3>ДОМА/КОТТЕДЖИ</h3>
+                        <div class="houses-cottages">
+                            <img src="./assets/img/modernist.jpg" alt="image">
+                        </div>
+                        <a href="#">Готовые решения для
+                            коттеджей и частных домов </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="catalog-sec ">
+        <div class="container">
+            <div class="bread-caps anim-style">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a>Каталог продукции</a></li>
+                </ul>
+            </div>
+            <div class="catalog-main">
+                <div class="catalog-title anim-style">
+                    <h1>Каталог</h1>
+                    <div class="open-filter-mobile"><i class="icon-filter"></i></div>
+                </div>
+                <div class="catalog__flex ">
+                    <div class="catalog__left">
+                        <div class="catalog__filter anim-style">
+                            <div class="sorting-filter">
+                                <span>Фильтр сортировки</span>
+                                <div class="close-filter">
+                                    <i class="icon-close"></i>
+                                </div>
+                            </div>
+                            <div id="accordion">
+                                <div class="catalog-accordion-box">
+                                    <div class="catalog-accordion-name link">
+                                        <span>Архитектурные линейки</span>
+                                    </div>
+                                    <div class="submenu">
+                                        <div class="catalog-accordion-info">
+                                            <div class="checked-lab">
+                                                <label>
+                                                    <small>Фасадное остекление</small>
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="checked-lab">
+                                                <label>
+                                                    <small>Витрины</small>
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="checked-lab">
+                                                <label>
+                                                    <small>Мебель</small>
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="checked-lab">
+                                                <label>
+                                                    <small>Двери</small>
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="checked-lab">
+                                                <label>
+                                                    <small>Перегородки и гардеробные</small>
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="checked-lab">
+                                                <label>
+                                                    <small>Оконное применение</small>
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="checked-lab">
+                                                <label>
+                                                    <small>Стеклянные полы и лестницы</small>
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="checked-lab">
+                                                <label>
+                                                    <small>Стеклянные козырьки</small>
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog-accordion-box">
+                                    <div class="catalog-accordion-name link">
+                                        <span>Оконные линейки</span>
+                                    </div>
+                                    <div class="submenu">
+                                        <div class="catalog-accordion-info">
+                                            <div class="checked-lab">
+                                                <label>
+                                                    <small>Оконные линейки</small>
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog-accordion-box">
+                                    <div class="catalog-accordion-name link">
+                                        <span>Интерьерные линейки</span>
+                                    </div>
+                                    <div class="submenu">
+                                        <div class="catalog-accordion-info">
+                                            <div class="checked-lab">
+                                                <label>
+                                                    <small>Мебель</small>
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="checked-lab">
+                                                <label>
+                                                    <small>Двери</small>
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="checked-lab">
+                                                <label>
+                                                    <small>Облицовка стен</small>
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="checked-lab">
+                                                <label>
+                                                    <small>Стеклянные полы и лестницы</small>
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="checked-lab">
+                                                <label>
+                                                    <small>Стеклянные козырьки</small>
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="checked-lab">
+                                                <label>
+                                                    <small>Зеркала</small>
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="checked-lab">
+                                                <label>
+                                                    <small>Перегородки и гардеробные</small>
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="checked-lab">
+                                                <label>
+                                                    <small>Торговое оборудование </small>
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="checked-lab">
+                                                <label>
+                                                    <small>Фасадное остекление</small>
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="checked-lab">
+                                                <label>
+                                                    <small>Душевые перегородки</small>
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="available-crystal">
+                                <div class="checked-lab">
+                                    <label>
+                                        <small>Доступно на CrystalVision</small>
+                                        <input type="checkbox" checked>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button class="btn-blue">Показать</button>
+                            <button class="btn-rest">Сбросить</button>
+                        </div>
+                    </div>
+                    <div class="catalog__cnt">
+                        <div class="catalog__menu anim-newSing">
+                            <ul>
+                                <li class="catalog-tab-click catalog-menu-href" data-catalog="all">Все</li>
+                                <li class="catalog-tab-click" data-catalog="architectural">Архитектурные</li>
+                                <li class="catalog-tab-click" data-catalog="decorative">Декоративные</li>
+                                <li class="catalog-tab-click" data-catalog="window">Оконные</li>
+                            </ul>
+                        </div>
+                        <div class="catalog-min anim-newSing">
+                            <div class="catalog-min-js" data-catalog="all">
+                                <div class="catalog__wrap">
+                                    <div class="catalog__box">
+                                        <a href="#" class="catalog__photo">
+                                            <span class="actual-cart">АРХИТЕКТУКРНЫЕ</span>
+                                            <img src="./assets/img/catalog1.jpg" alt="image">
+                                        </a>
+                                        <a href="#" class="catalog-cart-name">VISION</a>
+                                        <p>
+                                            Высокоселективное
+                                            мультифункциональное стекло с двойным
+                                            серебряным покрытием.
+                                        </p>
+                                    </div>
+                                    <div class="catalog__box">
+                                        <a href="#" class="catalog__photo">
+                                            <span class="actual-cart">ДЕКОРАТИВНЫЕ</span>
+                                            <img src="./assets/img/catalog2.jpg" alt="image">
+                                        </a>
+                                        <a href="#" class="catalog-cart-name">PHOENIX</a>
+                                        <p>
+                                            Солнцезащитное стекло с зеркальным
+                                            магнетронным покрытием
+                                        </p>
+                                    </div>
+                                    <div class="catalog__box">
+                                        <a href="#" class="catalog__photo">
+                                            <span class="actual-cart">ОКОННЫЕ</span>
+                                            <img src="./assets/img/catalog3.jpg" alt="image">
+                                        </a>
+                                        <a href="#" class="catalog-cart-name">TOP L/ TOP LT</a>
+                                        <p>
+                                            Мультифункциональное закаливаемое
+                                            стекло с наилучшим уровнем
+                                            светопропускания
+                                        </p>
+                                    </div>
+                                    <div class="catalog__box">
+                                        <a href="#" class="catalog__photo">
+                                            <span class="actual-cart">АРХИТЕКТУКРНЫЕ</span>
+                                            <img src="./assets/img/catalog4.jpg" alt="image">
+                                        </a>
+                                        <a href="#" class="catalog-cart-name">CRYSTALVISION</a>
+                                        <p>
+                                            Максимальная нейтральность и
+                                            светопередача
+                                        </p>
+                                    </div>
+                                    <div class="catalog__box">
+                                        <a href="#" class="catalog__photo">
+                                            <span class="actual-cart">ДЕКОРАТИВНЫЕ</span>
+                                            <img src="./assets/img/catalog5.jpg" alt="image">
+                                        </a>
+                                        <a href="#" class="catalog-cart-name">STRATOSAFE</a>
+                                        <p>
+                                            Стойкая гарантия защиты от
+                                            повреждений любого уровня
+                                        </p>
+                                    </div>
+                                    <div class="catalog__box">
+                                        <a href="#" class="catalog__photo">
+                                            <span class="actual-cart">ОКОННЫЕ</span>
+                                            <img src="./assets/img/catalog6.jpg" alt="image">
+                                        </a>
+                                        <a href="#" class="catalog-cart-name">STRATOSAFE ACOUSTIS </a>
+                                        <p>
+                                            Стекло в повышенным уровнем
+                                            шумозащиты
+                                        </p>
+                                    </div>
+                                    <div class="catalog__box">
+                                        <a href="#" class="catalog__photo">
+                                            <span class="actual-cart">АРХИТЕКТУКРНЫЕ</span>
+                                            <img src="./assets/img/catalog1.jpg" alt="image">
+                                        </a>
+                                        <a href="#" class="catalog-cart-name">VISION</a>
+                                        <p>
+                                            Высокоселективное
+                                            мультифункциональное стекло с двойным
+                                            серебряным покрытием.
+                                        </p>
+                                    </div>
+                                    <div class="catalog__box">
+                                        <a href="#" class="catalog__photo">
+                                            <span class="actual-cart">ДЕКОРАТИВНЫЕ</span>
+                                            <img src="./assets/img/catalog2.jpg" alt="image">
+                                        </a>
+                                        <a href="#" class="catalog-cart-name">PHOENIX</a>
+                                        <p>
+                                            Солнцезащитное стекло с зеркальным
+                                            магнетронным покрытием
+                                        </p>
+                                    </div>
+                                    <div class="catalog__box">
+                                        <a href="#" class="catalog__photo">
+                                            <span class="actual-cart">ОКОННЫЕ</span>
+                                            <img src="./assets/img/catalog3.jpg" alt="image">
+                                        </a>
+                                        <a href="#" class="catalog-cart-name">TOP L/ TOP LT</a>
+                                        <p>
+                                            Мультифункциональное закаливаемое
+                                            стекло с наилучшим уровнем
+                                            светопропускания
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog-min-js" data-catalog="architectural">
+                                <div class="catalog__wrap">
+                                    <div class="catalog__box">
+                                        <a href="#" class="catalog__photo">
+                                            <span class="actual-cart">ДЕКОРАТИВНЫЕ</span>
+                                            <img src="./assets/img/catalog5.jpg" alt="image">
+                                        </a>
+                                        <a href="#" class="catalog-cart-name">STRATOSAFE</a>
+                                        <p>
+                                            Стойкая гарантия защиты от
+                                            повреждений любого уровня
+                                        </p>
+                                    </div>
+                                    <div class="catalog__box">
+                                        <a href="#" class="catalog__photo">
+                                            <span class="actual-cart">ОКОННЫЕ</span>
+                                            <img src="./assets/img/catalog6.jpg" alt="image">
+                                        </a>
+                                        <a href="#" class="catalog-cart-name">STRATOSAFE ACOUSTIS </a>
+                                        <p>
+                                            Стекло в повышенным уровнем
+                                            шумозащиты
+                                        </p>
+                                    </div>
+                                    <div class="catalog__box">
+                                        <a href="#" class="catalog__photo">
+                                            <span class="actual-cart">АРХИТЕКТУКРНЫЕ</span>
+                                            <img src="./assets/img/catalog1.jpg" alt="image">
+                                        </a>
+                                        <a href="#" class="catalog-cart-name">VISION</a>
+                                        <p>
+                                            Высокоселективное
+                                            мультифункциональное стекло с двойным
+                                            серебряным покрытием.
+                                        </p>
+                                    </div>
+                                    <div class="catalog__box">
+                                        <a href="#" class="catalog__photo">
+                                            <span class="actual-cart">ДЕКОРАТИВНЫЕ</span>
+                                            <img src="./assets/img/catalog2.jpg" alt="image">
+                                        </a>
+                                        <a href="#" class="catalog-cart-name">PHOENIX</a>
+                                        <p>
+                                            Солнцезащитное стекло с зеркальным
+                                            магнетронным покрытием
+                                        </p>
+                                    </div>
+                                    <div class="catalog__box">
+                                        <a href="#" class="catalog__photo">
+                                            <span class="actual-cart">ОКОННЫЕ</span>
+                                            <img src="./assets/img/catalog3.jpg" alt="image">
+                                        </a>
+                                        <a href="#" class="catalog-cart-name">TOP L/ TOP LT</a>
+                                        <p>
+                                            Мультифункциональное закаливаемое
+                                            стекло с наилучшим уровнем
+                                            светопропускания
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog-min-js" data-catalog="decorative">
+                                <div class="catalog__wrap">
+                                    <div class="catalog__box">
+                                        <a href="#" class="catalog__photo">
+                                            <span class="actual-cart">АРХИТЕКТУКРНЫЕ</span>
+                                            <img src="./assets/img/catalog1.jpg" alt="image">
+                                        </a>
+                                        <a href="#" class="catalog-cart-name">VISION</a>
+                                        <p>
+                                            Высокоселективное
+                                            мультифункциональное стекло с двойным
+                                            серебряным покрытием.
+                                        </p>
+                                    </div>
+                                    <div class="catalog__box">
+                                        <a href="#" class="catalog__photo">
+                                            <span class="actual-cart">ДЕКОРАТИВНЫЕ</span>
+                                            <img src="./assets/img/catalog2.jpg" alt="image">
+                                        </a>
+                                        <a href="#" class="catalog-cart-name">PHOENIX</a>
+                                        <p>
+                                            Солнцезащитное стекло с зеркальным
+                                            магнетронным покрытием
+                                        </p>
+                                    </div>
+                                    <div class="catalog__box">
+                                        <a href="#" class="catalog__photo">
+                                            <span class="actual-cart">ОКОННЫЕ</span>
+                                            <img src="./assets/img/catalog3.jpg" alt="image">
+                                        </a>
+                                        <a href="#" class="catalog-cart-name">TOP L/ TOP LT</a>
+                                        <p>
+                                            Мультифункциональное закаливаемое
+                                            стекло с наилучшим уровнем
+                                            светопропускания
+                                        </p>
+                                    </div>
+                                    <div class="catalog__box">
+                                        <a href="#" class="catalog__photo">
+                                            <span class="actual-cart">АРХИТЕКТУКРНЫЕ</span>
+                                            <img src="./assets/img/catalog4.jpg" alt="image">
+                                        </a>
+                                        <a href="#" class="catalog-cart-name">CRYSTALVISION</a>
+                                        <p>
+                                            Максимальная нейтральность и
+                                            светопередача
+                                        </p>
+                                    </div>
+                                    <div class="catalog__box">
+                                        <a href="#" class="catalog__photo">
+                                            <span class="actual-cart">ДЕКОРАТИВНЫЕ</span>
+                                            <img src="./assets/img/catalog5.jpg" alt="image">
+                                        </a>
+                                        <a href="#" class="catalog-cart-name">STRATOSAFE</a>
+                                        <p>
+                                            Стойкая гарантия защиты от
+                                            повреждений любого уровня
+                                        </p>
+                                    </div>
+                                    <div class="catalog__box">
+                                        <a href="#" class="catalog__photo">
+                                            <span class="actual-cart">ОКОННЫЕ</span>
+                                            <img src="./assets/img/catalog6.jpg" alt="image">
+                                        </a>
+                                        <a href="#" class="catalog-cart-name">STRATOSAFE ACOUSTIS </a>
+                                        <p>
+                                            Стекло в повышенным уровнем
+                                            шумозащиты
+                                        </p>
+                                    </div>
+                                    <div class="catalog__box">
+                                        <a href="#" class="catalog__photo">
+                                            <span class="actual-cart">АРХИТЕКТУКРНЫЕ</span>
+                                            <img src="./assets/img/catalog1.jpg" alt="image">
+                                        </a>
+                                        <a href="#" class="catalog-cart-name">VISION</a>
+                                        <p>
+                                            Высокоселективное
+                                            мультифункциональное стекло с двойным
+                                            серебряным покрытием.
+                                        </p>
+                                    </div>
+                                    <div class="catalog__box">
+                                        <a href="#" class="catalog__photo">
+                                            <span class="actual-cart">ДЕКОРАТИВНЫЕ</span>
+                                            <img src="./assets/img/catalog2.jpg" alt="image">
+                                        </a>
+                                        <a href="#" class="catalog-cart-name">PHOENIX</a>
+                                        <p>
+                                            Солнцезащитное стекло с зеркальным
+                                            магнетронным покрытием
+                                        </p>
+                                    </div>
+                                    <div class="catalog__box">
+                                        <a href="#" class="catalog__photo">
+                                            <span class="actual-cart">ОКОННЫЕ</span>
+                                            <img src="./assets/img/catalog3.jpg" alt="image">
+                                        </a>
+                                        <a href="#" class="catalog-cart-name">TOP L/ TOP LT</a>
+                                        <p>
+                                            Мультифункциональное закаливаемое
+                                            стекло с наилучшим уровнем
+                                            светопропускания
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog-min-js" data-catalog="window">
+                                <div class="catalog__wrap">
+                                    <div class="catalog__box">
+                                        <a href="#" class="catalog__photo">
+                                            <span class="actual-cart">АРХИТЕКТУКРНЫЕ</span>
+                                            <img src="./assets/img/catalog1.jpg" alt="image">
+                                        </a>
+                                        <a href="#" class="catalog-cart-name">VISION</a>
+                                        <p>
+                                            Высокоселективное
+                                            мультифункциональное стекло с двойным
+                                            серебряным покрытием.
+                                        </p>
+                                    </div>
+                                    <div class="catalog__box">
+                                        <a href="#" class="catalog__photo">
+                                            <span class="actual-cart">ДЕКОРАТИВНЫЕ</span>
+                                            <img src="./assets/img/catalog2.jpg" alt="image">
+                                        </a>
+                                        <a href="#" class="catalog-cart-name">PHOENIX</a>
+                                        <p>
+                                            Солнцезащитное стекло с зеркальным
+                                            магнетронным покрытием
+                                        </p>
+                                    </div>
+                                    <div class="catalog__box">
+                                        <a href="#" class="catalog__photo">
+                                            <span class="actual-cart">ОКОННЫЕ</span>
+                                            <img src="./assets/img/catalog3.jpg" alt="image">
+                                        </a>
+                                        <a href="#" class="catalog-cart-name">TOP L/ TOP LT</a>
+                                        <p>
+                                            Мультифункциональное закаливаемое
+                                            стекло с наилучшим уровнем
+                                            светопропускания
+                                        </p>
+                                    </div>
+                                    <div class="catalog__box">
+                                        <a href="#" class="catalog__photo">
+                                            <span class="actual-cart">АРХИТЕКТУКРНЫЕ</span>
+                                            <img src="./assets/img/catalog4.jpg" alt="image">
+                                        </a>
+                                        <a href="#" class="catalog-cart-name">CRYSTALVISION</a>
+                                        <p>
+                                            Максимальная нейтральность и
+                                            светопередача
+                                        </p>
+                                    </div>
+                                    <div class="catalog__box">
+                                        <a href="#" class="catalog__photo">
+                                            <span class="actual-cart">ДЕКОРАТИВНЫЕ</span>
+                                            <img src="./assets/img/catalog5.jpg" alt="image">
+                                        </a>
+                                        <a href="#" class="catalog-cart-name">STRATOSAFE</a>
+                                        <p>
+                                            Стойкая гарантия защиты от
+                                            повреждений любого уровня
+                                        </p>
+                                    </div>
+                                    <div class="catalog__box">
+                                        <a href="#" class="catalog__photo">
+                                            <span class="actual-cart">ОКОННЫЕ</span>
+                                            <img src="./assets/img/catalog6.jpg" alt="image">
+                                        </a>
+                                        <a href="#" class="catalog-cart-name">STRATOSAFE ACOUSTIS </a>
+                                        <p>
+                                            Стекло в повышенным уровнем
+                                            шумозащиты
+                                        </p>
+                                    </div>
+                                    <div class="catalog__box">
+                                        <a href="#" class="catalog__photo">
+                                            <span class="actual-cart">АРХИТЕКТУКРНЫЕ</span>
+                                            <img src="./assets/img/catalog1.jpg" alt="image">
+                                        </a>
+                                        <a href="#" class="catalog-cart-name">VISION</a>
+                                        <p>
+                                            Высокоселективное
+                                            мультифункциональное стекло с двойным
+                                            серебряным покрытием.
+                                        </p>
+                                    </div>
+                                    <div class="catalog__box">
+                                        <a href="#" class="catalog__photo">
+                                            <span class="actual-cart">ДЕКОРАТИВНЫЕ</span>
+                                            <img src="./assets/img/catalog2.jpg" alt="image">
+                                        </a>
+                                        <a href="#" class="catalog-cart-name">PHOENIX</a>
+                                        <p>
+                                            Солнцезащитное стекло с зеркальным
+                                            магнетронным покрытием
+                                        </p>
+                                    </div>
+                                    <div class="catalog__box">
+                                        <a href="#" class="catalog__photo">
+                                            <span class="actual-cart">ОКОННЫЕ</span>
+                                            <img src="./assets/img/catalog3.jpg" alt="image">
+                                        </a>
+                                        <a href="#" class="catalog-cart-name">TOP L/ TOP LT</a>
+                                        <p>
+                                            Мультифункциональное закаливаемое
+                                            стекло с наилучшим уровнем
+                                            светопропускания
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer__main ">
+                <a href="#" class="footer__logo anim-newSing"><img src="./assets/img/logo.svg" alt="logo"></a>
+                <div class="footer__menu">
+                    <ul class="anim-newSing">
+                        <li><a href="#">Продукция</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Проекты</a></li>
+                        <li><a href="#">Готовые решения</a></li>
+                        <li><a href="#">Дома/Коттеджи</a></li>
+                        <li><a href="#">Команда</a></li>
+                        <li><a href="#">Блог</a></li>
+                    </ul>
+                    <ul class="anim-newSing">
+                        <li><a href="#">Партнеры</a></li>
+                        <li><a href="#">Карьера</a></li>
+                        <li><a href="#">Видео</a></li>
+                        <li><a href="#">Материалы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <ul class="anim-newSing">
+                        <li><a href="#">Архитекторам и проектировщикам</a></li>
+                        <li><a href="#">Дизайнерам</a></li>
+                        <li><a href="#">Производственным компаниям</a></li>
+                        <li><a href="#">Оконным компаниям</a></li>
+                        <li><a href="#">Частным компаниям</a></li>
+                    </ul>
+                    <ul class="anim-newSing">
+                        <li><a href="#">Материалы</a></li>
+                        <li><a href="#">Консультации</a></li>
+                        <li><a href="#">Glass Bus</a></li>
+                        <li><a href="#">Технические расчеты</a></li>
+                        <li><a href="#">Сервис-каталог</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__down anim-newSing">
+                <p>© AIG Glass Russia 2024</p>
+                <a href="#">Разработка сайта LOGIC</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.mask.js"></script>
+    <script src="assets/js/jquery.formstyler.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/fancybox.umd.js"></script>
+    <script src="assets/js/script.js"></script>
+
+
+</body>
+
+</html>

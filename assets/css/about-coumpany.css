@@ -1,0 +1,120 @@
+.about-company__info{
+    margin-top: 26px;
+}
+
+.about-company__info h3{
+    max-width: 960px;
+    width: 100%;
+    margin-top: 48px;
+    font-family: 'HelveticaNeue';
+    font-weight: 400;
+    line-height: 150%;
+}
+
+
+.advantages-sec{
+    margin-top: 90px;
+    margin-bottom: 86px;
+}
+.advantages-sec .application__flex{
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3,366px);
+    gap: 80px 15px;
+}
+.advantages-sec .application__box small{
+    color: #555555;
+    display: block;
+    margin-top: 19px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+
+}
+
+.company-services__wrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 20px;
+    margin-top: 33px;
+}
+.company-services__wrap .services__box {
+    width: calc(33.333333% - 14px);
+}
+.houses-solutions-title{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.houses-solutions-text{
+    max-width: 630px;
+    width: 100%;
+}
+.houses-solutions-text p{
+    margin-bottom: 26px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: #555555;
+}
+
+
+
+@media (max-width: 1199px){
+    .advantages-sec .application__flex {
+        grid-template-columns: repeat(3,calc(100% / 3 - 10px));
+    }
+    .advantages-sec .application__box {
+        max-width: 453px;
+    }
+}
+
+@media (max-width: 1020px){
+    .company-services__wrap .services__box {
+        width: calc(50% - 14px);
+    }
+    .houses-solutions-title {
+        align-items: start;
+        margin-bottom: 30px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .advantages-sec {
+        margin-top: 66px;
+        margin-bottom: 66px;
+    }
+    .advantages-sec .application__flex {
+        grid-template-columns: repeat(2,calc(50% - 15px / 2));
+        gap: 40px 15px;
+    }
+}
+@media (max-width: 768px){
+    .advantages-sec .application__flex {
+        grid-template-columns: 100%;
+    }
+}
+
+@media (max-width: 620px){
+    .company-services__wrap .services__box {
+        width: 100%;
+    }
+    .advantages-sec .application__box small {
+        margin-top: 13px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .about-company__info h3 {
+        margin-top: 30px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .houses-solutions-text p {
+        margin-bottom: 19px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}

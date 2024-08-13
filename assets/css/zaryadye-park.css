@@ -1,0 +1,175 @@
+.zaryadye-park__main{
+    margin-top: 26px;
+}
+.zaryadye-park__main h1{
+    max-width: 800px;
+    width: 100%;
+}
+.zaryadye-park__photo{
+    margin-top: 60px;
+    width: 100%;
+}
+.zaryadye-park__photo img{
+    width: 100%;
+    border-radius: 20px;
+    aspect-ratio: 100 / 46;
+    object-fit: cover;
+}
+.zaryadye-description{
+    margin-top: 59px;
+    max-width: 860px;
+    width: 100%;
+}
+.zaryadye-description span{
+    color: #081B4D;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: left;
+
+}
+.zaryadye-description p{
+    margin-top: 15px;
+    color: #555555;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+
+}
+.zaryadye__wrap{
+    margin-top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px 80px;
+}
+.zaryadye__text{
+    width: 100%;
+    max-width: 340px;
+}
+.zaryadye__text span{
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: left;
+    color: #081B4D;
+}
+.zaryadye__text small{
+    display: block;
+    margin-top: 15px;
+    color: #555555;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+
+}
+
+
+.photo-gallery-sec{
+    margin-top: 98px;
+}
+.photo-gallery__wrap{
+    margin-top: 28px;
+    display: grid;
+    grid-template-columns: repeat(3,calc(100% / 3 - 8px));
+    gap: 26px 12px;
+}
+.photo-gallery__box{
+    display: flex;
+    transition: 0.3s;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 66.5%;
+}
+.photo-gallery__box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 0.3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.photo-gallery__box:hover img{
+    transform: scale(1.1);
+}
+.photo-gallery-sec p{
+    margin-top: 19px;
+    color: #777777;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+
+}
+
+
+
+
+
+@media (max-width: 1199px){
+    .zaryadye-park__photo {
+        margin-top: 30px;
+    }
+    .zaryadye-description {
+        margin-top: 44px;
+    }
+
+    .zaryadye-description p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .zaryadye-description span {
+        font-size: 20px;
+    }
+    .zaryadye__text span {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .zaryadye__text {
+        max-width: 295px;
+    }
+    .zaryadye__wrap {
+        margin-top: 36px;
+        gap: 18px 35px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1020px){
+    .zaryadye-park__main h1 {
+        max-width: 490px;
+    }
+    .zaryadye__text {
+        max-width: 330px;
+    }
+
+    .zaryadye__wrap {
+        gap: 32px 28px;
+    }
+    .photo-gallery__wrap {
+        gap: 10px;
+        grid-template-columns: repeat(2,calc(50% - 5px));
+    }
+    .photo-gallery-sec p {
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
+@media (max-width: 570px){
+    .zaryadye-park__photo img{
+        aspect-ratio: 100 / 69;
+    }
+}

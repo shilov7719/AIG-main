@@ -1,0 +1,115 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer{
+    margin-top: auto;
+}
+
+.first-section{
+    margin-top: 75px;
+    padding-bottom: 38px;
+}
+
+.first-section__top{
+    margin-top: 26px;
+}
+
+.error404__grid{
+    display: flex;
+}
+
+.error404__num{
+    font-size: 300px;
+    line-height: 120%;
+    color: #becdde;
+}
+
+.error404__col2{
+    margin-left: 70px;
+    padding-top: 70px;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+}
+
+.error404__col2 .h3{
+    font-weight: 400;
+    margin-top: 14px;
+}
+
+.error404__col2 .back-link{
+    margin-top: 80px;
+}
+
+.icon-arrow._left{
+    content: url("../img/icons/arrow-left.svg");
+}
+
+.back-link{
+    display: flex;
+    align-items: center;
+    color: #1a2e63;
+}
+
+.back-link:hover i{
+    transform: translateX(-15px);
+}
+
+.back-link i{
+    margin-right: 14px;
+}
+
+.back-link span{
+    font-size: 1em;
+    line-height: 120%;
+}
+
+
+@media (max-width: 1199px){
+    .first-section{
+        margin-top: 70px;
+    }
+}
+
+
+@media (max-width: 1020px){
+    .error404__num{
+        font-size: 234px;
+    }
+
+    .error404__col2{
+        padding-top: 20px;
+        margin-left: 30px;
+    }
+
+    .error404__col2 .back-link{
+        margin-top: 58px;
+    }
+}
+
+
+@media (max-width: 768px){
+    .error404__grid{
+        display: block;
+    }
+
+    .error404__num{
+
+    }
+
+    .error404__col2{
+        padding-top: 0;
+        margin-left: 0;
+        max-width: 285px;
+    }
+}
+
+
+@media (max-width: 400px){
+    .error404__num{
+        font-size: 200px;
+    }
+}
